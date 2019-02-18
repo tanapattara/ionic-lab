@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Mobile App LAB2
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <button ion-item 
+    *ngFor="let i of items" 
+    (click)="itemSelected(i)">
+      <h4>{{ i.name }}</h4>
+      <p>{{i.id}}</p>
+    </button>     
+  </ion-list>
+</ion-content>

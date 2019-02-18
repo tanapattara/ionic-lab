@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      LAB3 TODO App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let item of datas">
+      {{ item.todo }}
+      <ion-icon name="checkbox-outline" item-end></ion-icon>
+    </button>  
+    
+  </ion-list>
+</ion-content>
